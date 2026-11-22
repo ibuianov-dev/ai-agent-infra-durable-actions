@@ -1,9 +1,12 @@
+import os
+
 BASE_URL = "https://cq-screen.bhairav.workers.dev/"
 AUTH_ENDPOINT_POST = "auth/start"
 ASSETS_ENDPOINT_GET = "s2/assets"
 DEPLOY_ENDPOINT_POST = "s2/deploy"
 REPORT_ENDPOINT_POST = "s2/report"
-MY_KEY = "cq-061cfdb32640a685"
+# Per-candidate key for the screening server. Read from the environment, never committed.
+MY_KEY = os.environ.get("CQ_CANDIDATE_KEY", "")
 
 IDEMPOTENCY_HEADER = "X-CQ-Idempotency-Key"
 USER_AGENT = "Mozilla/5.0 (compatible; cq-screen-client/1.0; +candidate-submission)"

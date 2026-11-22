@@ -114,6 +114,8 @@ the automated run.
   the controlled experiments matching the model, not from tests.
 - **Hardcoded config.** Settings live in `CONSTANTS.py` instead of environment
   variables. That was fine for a two-hour screen but isn't production practice.
+  After the screen, I moved the candidate key into an environment variable so
+  it isn't committed.
 
 ## Files
 
@@ -130,7 +132,8 @@ the automated run.
 ## Running it
 
 Python 3.14 with [uv](https://docs.astral.sh/uv/). The run needs a per-candidate
-key for the screening server, so this repo is meant to be read rather than re-run.
+key for the screening server, read from the `CQ_CANDIDATE_KEY` environment
+variable, so this repo is meant to be read rather than re-run.
 
 ```bash
 uv run python src/deploy.py           # deploy everything, resumable from the journal

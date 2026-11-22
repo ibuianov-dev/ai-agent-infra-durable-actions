@@ -1,3 +1,5 @@
+> **Redacted:** the candidate key and one expired bearer token are replaced with `[REDACTED]`. Nothing else in this transcript has been changed.
+
 ╭─── Claude Code v2.1.236 ─────────────────────────────────────────────────────╮
 │                                                    │ Tips for getting        │
 │                Welcome back ledger!                │ started                 │
@@ -607,7 +609,7 @@
   auth/start endpoint. and heres what the output would look like:               
                                                                                 
   {                                                                             
-      "access_token": "8d26bf4b0bea60b4037704d0e2ded34f",                       
+      "access_token": "[REDACTED]",                                             
       "expires_in": 300,                                                        
       "run_minutes_remaining": 108                                              
   }                                                                             
@@ -948,14 +950,14 @@
        1 -BASE_URL="https://cq-screen.bhairav.workers.dev/"              
        2 -AUTH_ENDPOINT_POST="auth/start"                                
        3 -ASSETS_ENDPOINT_GET="s2/assets"                                
-       4 -MY_KEY="cq-061cfdb32640a685"                                   
+       4 -MY_KEY="cq-[REDACTED]"                                         
        1   No newline at end of file
        2 +BASE_URL = "https://cq-screen.bhairav.workers.dev/"            
        3 +AUTH_ENDPOINT_POST = "auth/start"                              
        4 +ASSETS_ENDPOINT_GET = "s2/assets"                              
        5 +DEPLOY_ENDPOINT_POST = "s2/deploy"                             
        6 +REPORT_ENDPOINT_POST = "s2/report"                             
-       7 +MY_KEY = "cq-061cfdb32640a685"                                 
+       7 +MY_KEY = "cq-[REDACTED]"                                       
        8 +                                                               
        9 +IDEMPOTENCY_HEADER = "X-CQ-Idempotency-Key"                    
       10 +USER_AGENT = "Mozilla/5.0 (compatible; cq-screen-client/1.0; +c
