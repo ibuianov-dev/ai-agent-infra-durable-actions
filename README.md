@@ -2,7 +2,7 @@
 
 Part 2 of a two-part technical screen. Both parts ask the same question: when is
 a system entitled to say it succeeded?
-[Part 1](https://github.com/ibuianov-dev/YC-S26-assessment-1) audits an AI
+[Part 1](https://github.com/ibuianov-dev/ai-agent-quality-verification) audits an AI
 pipeline that reported a job complete when it wasn't.
 
 Here the question is: **when is a system entitled to tell an operator a
